@@ -89,7 +89,7 @@ newGameBtn.addEventListener("click", () => {
 
 // --- WebSocket Logic ---
 function connectWebSocket() {
-    websocket = new WebSocket(`ws://${window.location.host}/ws/${gameId}`);
+    websocket = new WebSocket(`wss://${window.location.host}/ws/${gameId}`);
 
     websocket.onopen = () => console.log("WebSocket connection established");
 
@@ -231,3 +231,4 @@ function updateTurnIndicator(currentPlayer) {
 document.addEventListener('DOMContentLoaded', () => {
     showView('game-setup');
 });
+
