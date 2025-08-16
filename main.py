@@ -1,5 +1,5 @@
 from fastapi import FastAPI, WebSocket, Request, WebSocketDisconnect
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import asyncio
@@ -22,6 +22,10 @@ def reset_game_board(game_id, starter="X"):
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
+
+@app.get("/keep_job_alive")
+def keep_job_alive():
+    return JSONResponse({"status": "Job is alive"})
 
 async def broadcast(game_id: str, message: dict):
     if game_id in games:
