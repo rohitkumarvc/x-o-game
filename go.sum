@@ -1,4 +1,4 @@
 github.com/gorilla/mux v1.8.1 h1:TuBL49tXwgrFYWhqrNgrUNEY92u81SPhu7sTdzQEiWY=
 github.com/gorilla/mux v1.8.1/go.mod h1:AKf9I4AEqPTxFyc1ldHgJfLjOEo0dxuXnIza/44tkk4=
-github.com/gorilla/websocket v1.5.3 h1:saPcZTryR0RFsnnhbfh78HgwrHFRK8vvHNtziKvMKBE=
+github.com/gorilla/websocket v1.5.3 h1:saDtZ6Pbx/0u+bgYQ3q96pZgCzfhKXGPqt7kZ72aNNg=
 github.com/gorilla/websocket v1.5.3/go.mod h1:PkI7nZ0BIAjjk5XKpP6alj2gWk37r4U0UOpQe+G0X40=
